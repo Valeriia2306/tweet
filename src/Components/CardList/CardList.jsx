@@ -47,7 +47,7 @@ export const CardList = () => {
       </ListTweets>
       {!isLoading && (
         <Btn type="button" onClick={handleLoadMore} disabled={pages === 4}>
-          Load more
+          Load more...
         </Btn>
       )}
     </Container>
