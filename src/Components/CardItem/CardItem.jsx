@@ -1,4 +1,5 @@
 import React from 'react';
+
 import logo from 'Images/Logo1x.png';
 import logo2x from 'Images/Logo2x@2x.png';
 import picture from 'Images/picture1x.png';
