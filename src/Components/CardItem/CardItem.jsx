@@ -57,6 +57,7 @@ export const CardItem = ({
     </Wrapper>
   );
 };
+console.log(Avatar);
 
 // ContactsItem.propTypes = {
 //     id: PropTypes.string.isRequired,
