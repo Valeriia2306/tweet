@@ -60,9 +60,3 @@ export const CardItem = ({
     </Wrapper>
   );
 };
-
-// ContactsItem.propTypes = {
-//     id: PropTypes.string.isRequired,
-//     name: PropTypes.string.isRequired,
-//     number: PropTypes.string.isRequired,
-// }

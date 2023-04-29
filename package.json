@@ -2,7 +2,7 @@
   "name": "tweet-cards",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Valeriia2306.github.io/tweet/",
+  "homepage": "https://valeriia2306.github.io/tweet/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
