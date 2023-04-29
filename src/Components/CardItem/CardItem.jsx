@@ -12,7 +12,8 @@ import {
   Line,
   AvatarWrapper,
   Avatar,
-  Text,
+  Tweets,
+  Followers,
   Btn,
 } from './CardItem.styled';
 import { editTweet } from 'redux/operations';
@@ -49,15 +50,16 @@ export const CardItem = ({
       <AvatarWrapper />
       <Avatar alt="user avatar" src={`${avatar}`} width="62px" height="62px" />
 
-      <Text>{tweets} Tweets</Text>
-      <Text>{new Intl.NumberFormat('en').format(followers)} followers</Text>
+      <Tweets>{tweets} Tweets</Tweets>
+      <Followers>
+        {new Intl.NumberFormat('en').format(followers)} followers
+      </Followers>
       <Btn type="button" isFollow={isFollowed} onClick={handleClick}>
         {isFollowed ? 'Following' : 'Follow'}
       </Btn>
     </Wrapper>
   );
 };
-console.log(Avatar);
 
 // ContactsItem.propTypes = {
 //     id: PropTypes.string.isRequired,
