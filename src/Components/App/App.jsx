@@ -1,6 +1,6 @@
 import React from 'react';
 import { lazy, useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import { Layout } from 'Components/Layout/Layout';
 import { useDispatch } from 'react-redux';
 import { fetchTweets } from 'redux/operations';
@@ -21,8 +21,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="tweets" element={<TweetsPage />} />
-          {/* <Route path="*" element={<Navigate to="/" />} /> */}
-          <Route path="*" element={<HomePage />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
     </div>
