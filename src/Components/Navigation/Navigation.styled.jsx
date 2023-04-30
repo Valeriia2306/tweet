@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const NavLinkStyled = styled(NavLink)`
   text-decoration: none;
@@ -22,6 +22,10 @@ export const NavLinkStyled = styled(NavLink)`
   &.active {
     background-color: #5cd3a8;
     pointer-events: none;
+  }
+  &:hover {
+    background-color: #5cd3a8;
+    transform: scale(1.05);
   }
 `;
 

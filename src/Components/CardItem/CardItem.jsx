@@ -52,7 +52,8 @@ export const CardItem = ({
 
       <Tweets>{tweets} Tweets</Tweets>
       <Followers>
-        {new Intl.NumberFormat('en').format(followers)} followers
+        {new Intl.NumberFormat('en-US').format(followers)}
+        {''} followers
       </Followers>
       <Btn type="button" isFollow={isFollowed} onClick={handleClick}>
         {isFollowed ? 'Following' : 'Follow'}
